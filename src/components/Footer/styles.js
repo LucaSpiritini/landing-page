@@ -44,7 +44,7 @@ export const styles = {
     },
   }),
   paper: {
-    p: '8px',
+    padding: '8px',
     display: 'flex',
     alignItems: 'center',
     background: '#F5F5F5',
@@ -60,7 +60,7 @@ export const styles = {
     lineHeight: '20px',
     textTransform: 'capitalize',
     color: '#fff',
-    p: '12px',
+    padding: '12px',
     width: '107px',
   },
   itemList: {
@@ -90,7 +90,7 @@ export const styles = {
     },
   }),
   inputBase: {
-    ml: 1,
+    marginLeft: 1,
     flex: 1,
     '& input::placeholder': {
       fontSize: '20px',
