@@ -1,7 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import Paper from '@mui/material/Paper'
@@ -9,7 +8,6 @@ import InputBase from '@mui/material/InputBase'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
 
-//IMPORTING SVG'S
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
@@ -116,9 +114,7 @@ const Footer = () => {
               subscribe our newsletter
             </Typography>
             <Typography sx={styles.text}>
-              Lorem ipsum dolor sit amet,{' '}
-              <Link sx={{ color: '#777FEB' }}>consectetur adipiscing</Link>
-              elit.consectetur. psum dolor sit am psum dolor sit am.{' '}
+              Lorem ipsum dolor sit amet, consectetur. psum dolor sit am psum dolor sit am
             </Typography>
             <Paper component='form' sx={styles.paper}>
               <InputBase sx={styles.inputBase} placeholder='Email address' />

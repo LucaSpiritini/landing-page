@@ -10,8 +10,8 @@ export const styles = {
   }),
   gridWrapper: (theme) => ({
     padding: '44px 0',
-    borderTop: '0.5px solid #777FEB',
-    borderBottom: '0.5px solid #777FEB',
+    borderTop: `0.5px solid ${theme.palette.slateBlue.main}`,
+    borderBottom: `0.5px solid ${theme.palette.slateBlue.main}`,
     rowGap: '24px',
     [theme.breakpoints.up('lg')]: {
       padding: '88px 0',

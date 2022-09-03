@@ -1,24 +1,30 @@
 import React from "react";
-import { Box } from "@mui/material";
+
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import CreativeDesign from "./components/CreativeDesign";
-import Experience from "./components/Experience";
-import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+import HomePage from "../src/components/pages/HomePage"
+import ServicesPage from "../src/components/pages/ServicesPage"
+import ContactPage from "../src/components/pages/ContactPage"
+import BlogPage from "../src/components/pages/BlogPage"
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
   return (
-    <Box>
+    <BrowserRouter>
 
       <Header />
-      <Hero />
-      <CreativeDesign />
-      <Experience />
-      <ContactUs />
+
+      <Routes>
+        <Route path="/" element= {<HomePage />} />
+        <Route path="/services" element= {<ServicesPage />} />
+        <Route path="/contact" element= {<ContactPage />} />
+        <Route path="/blog" element= {<BlogPage />} />
+      </Routes>
+
       <Footer />
 
-    </Box>
+    </BrowserRouter>
   );
 };
 

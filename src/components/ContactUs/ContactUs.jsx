@@ -1,15 +1,13 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import TextareaAutosize from "@mui/material/TextareaAutosize";
 
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import photo_send from "../../assets/img/photo_send_2.png";
+
+import FormComponent from "./FormComponent"
 
 import styles from "./styles";
 
@@ -41,20 +39,7 @@ const ContactUs = () => {
             </Box>
           </Box>
 
-          <Box sx={styles.inputs}>
-            <TextField placeholder='Full name' sx={styles.textField} />
-            <TextField placeholder='Email address' sx={styles.textField} />
-          </Box>
-
-          <TextareaAutosize
-            minRows={6}
-            placeholder='Write message'
-            style={styles.textareaAutosize}
-          />
-
-          <Button>
-            send us message <ArrowForwardIosIcon />
-          </Button>
+          <FormComponent />
 
         </Box>
 
